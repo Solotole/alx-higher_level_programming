@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 #include "lists.h"
-
+# fuction checking for lowercase character
 def islower(c):
     character = ord(c)
     if character >= 97 and character <= 122:
