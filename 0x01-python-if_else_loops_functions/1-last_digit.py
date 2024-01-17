@@ -1,6 +1,12 @@
 #!/usr/bin/python3
 import random
 number = random.randint(-10000, 10000)
+if str(number)[-1] == 'i':
+    number = number[0:-1]
+    number = int(number)
+else:
+    pass
+
 if number < 0:
     value2 = number % -10
 else:

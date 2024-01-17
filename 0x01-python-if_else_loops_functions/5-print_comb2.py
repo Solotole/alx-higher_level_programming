@@ -4,10 +4,7 @@ def last_digit(number):
 
 for i in range(0, 100, 1):
     if i < 99:
-        if len(i) == 1:
-            print("0{0:d}".format(i), end=", ")
-        else:
-            print("{0:d}".format(i), end=", ")
+        print("{0:0>2d}".format(i), end=", ")
     elif i == 99:
         last_digit(i)
     else:
