@@ -1,10 +1,11 @@
 #!/usr/bin/python3
 if __name__ == "__main__":
-    from sys import exit, stderr, argv
+    from sys import exit, argv
     from calculator_1 import add, sub, mul, div
     length = len(argv)
+
     if length != 4:
-        stderr.write("Usage: ./100-my_calculator.py <a> <operator> <b>\n")
+        print("Usage: ./100-my_calculator.py <a> <operator> <b>")
         exit(1)
     a = int(argv[1])
     c = argv[2]
@@ -22,5 +23,5 @@ if __name__ == "__main__":
         division = div(a, b)
         print("{0:d} {1:s} {2:d} = {3:d}".format(a, argv[2], b, division))
     else:
-        stderr.write("Unknown operator. Available operators: +, -, * and /\n")
+        print("Unknown operator. Available operators: +, -, * and /")
         exit(1)
