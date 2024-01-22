@@ -11,16 +11,16 @@ if __name__ == "__main__":
     b = int(argv[3])
     if c == '+':
         addition = add(a, b)
-        print("{0:d} {1:s} {2:d} = {3:d}".format(a, argv[2], b, addition))
+        print(f"{a} {c} {b} = {addition}")
     elif c == "-":
         subtraction = sub(a, b)
-        print("{0:d} {1:s} {2:d} = {3:d}".format(a, argv[2], b, subtraction))
+        print(f"{a} {c} {b} = {subtraction}")
     elif c  == "*":
         multiplication = mul(a, b)
-        print("{0:d} {1:s} {2:d} = {3:d}".format(a, argv[2], b, multiplication))
+        print(f"{a} {c} {b} = {multiplication}")
     elif c == "/":
         division = div(a, b)
-        print("{0:d} {1:s} {2:d} = {3:d}".format(a, argv[2], b, division))
+        print(f"{a} {c} {b} = {division}")
     else:
         print("Unknown operator. Available operators: +, -, * and /")
         exit(1)
