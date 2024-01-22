@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 if __name__ == "__main__":
-    from sys import exit, argv
+    from sys import argv
     from calculator_1 import add, sub, mul, div
     length = len(argv)
     if (length - 1) != 3:
@@ -24,5 +24,3 @@ if __name__ == "__main__":
     else:
         print("Unknown operator. Available operators: +, -, * and /")
         exit(1)
-else:
-    exit(1)
