@@ -13,6 +13,4 @@ def best_score(a_dictionary):
                     break
                 else:
                     continue
-        else:
-            return a_dictionary.keys()
     return max_key[0]
