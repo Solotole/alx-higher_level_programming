@@ -1,14 +1,15 @@
 #!/usr/bin/python3
-"""this is class square."""
+"""This is class square."""
 
 class Square:
-    """definition of class Square."""
+    """Definition of class Square."""
 
     def __init__(self, size):
-        """Automatic call upon instance.
+        """
+        Automatic call upon instance.
 
         Args:
-            size (int): the size of the square.
+            size (int): The size of the square.
 
         """
         self.__size = size
