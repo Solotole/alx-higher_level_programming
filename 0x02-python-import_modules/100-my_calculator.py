@@ -15,7 +15,7 @@ if __name__ == "__main__":
     elif c == "-":
         subtraction = sub(a, b)
         print(f"{a} {c} {b} = {subtraction}")
-    elif c  == "*":
+    elif c == "*":
         multiplication = mul(a, b)
         print(f"{a} {c} {b} = {multiplication}")
     elif c == "/":
