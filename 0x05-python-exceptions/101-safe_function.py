@@ -4,7 +4,8 @@ def safe_function(fct, *args):
     result = 0
     try:
         result = fct(args[0], args[1])
-        return result
-    except (TypeError, ValueError, IndexError, ZeroDivisionError):
-        print("Exception: {}".format(sys.exc_info()[1]), file=sys.stderr)
+    except Exception as e:
+        print("Exception: {}".format(e), file=sys.stderr)
         return None
+    else:
+        return result
