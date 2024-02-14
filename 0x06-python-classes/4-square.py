@@ -5,7 +5,6 @@
 class Square:
     """square representation"""
 
-    
     def __init__(self, size=0):
         """object instantiation.
 
@@ -18,7 +17,7 @@ class Square:
     @property
     def size(self):
         """getter method definition.
-            
+
             Returns:
                 returns size of the square
         """
@@ -27,8 +26,8 @@ class Square:
     @size.setter
     def size(self, value):
         """setter method definition
-            
-            Args:
+
+        Args:
                 value (int): value of the square side
         """
         if not isinstance(value, int):
@@ -36,7 +35,6 @@ class Square:
         elif value < 0:
             raise ValueError("size must be >= 0")
         self.__size = value
-
 
     def area(self):
         """area method defintion
