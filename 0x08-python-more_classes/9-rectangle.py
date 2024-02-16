@@ -142,4 +142,6 @@ class Rectangle:
         """
         if size != 0:
             width, height = size, size
+        else:
+            pass
         return cls(width, height)
