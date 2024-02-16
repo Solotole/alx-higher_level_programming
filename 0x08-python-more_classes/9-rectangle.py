@@ -140,6 +140,6 @@ class Rectangle:
         Returns:
             return new rectangle with all sides equal to size
         """
-        width = size
-        height = size
+        if size != 0:
+            width, height = size, size
         return cls(width, height)
