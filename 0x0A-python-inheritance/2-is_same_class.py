@@ -4,8 +4,15 @@
 
 def is_same_class(obj, a_class):
     """instance of a class
+    
+    Args:
+        obj (int): value to be tested of its type
+        a_class (class): class to be checked against the obj
+
+    Returns:
+        return True if it is an instance and Flase otherwise
     """
-    if type(obj) == a_class:
+    if type(obj) is  a_class:
         return True
     else:
         return False
