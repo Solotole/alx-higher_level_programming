@@ -4,7 +4,7 @@
 
 def is_same_class(obj, a_class):
     """instance of a class
-    
+
     Args:
         obj (int): value to be tested of its type
         a_class (class): class to be checked against the obj
