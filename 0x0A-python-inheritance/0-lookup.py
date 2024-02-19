@@ -5,4 +5,4 @@
 
 def lookup(obj):
     """subclass of the base class"""
-    return dir(lookup)
+    return dir(obj)
