@@ -12,4 +12,4 @@ def class_to_json(obj):
     Returns:
         return a serialized object
     """
-    return json.dumps(obj.__dict__)
+    return (obj.__dict__)
