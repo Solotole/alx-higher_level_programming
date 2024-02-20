@@ -10,6 +10,6 @@ def class_to_json(obj):
         obj (object): object for serialization
 
     Returns:
-        return a serialized object
+        return dictionary of object obj
     """
-    return json.dumps(obj.__dict__)
+    return obj.__dict__
