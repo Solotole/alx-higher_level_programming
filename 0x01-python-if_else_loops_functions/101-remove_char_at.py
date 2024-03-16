@@ -1,8 +1,10 @@
 #!/usr/bin/python3
 def remove_char_at(str, n):
-    list = []
+    string = ""
     size = len(str)
     for i in range(size):
         if i != n:
-            list = str[i]
-    print("{0:s}".format(list))
+            string += str[i]
+        else:
+            continue
+    return string
