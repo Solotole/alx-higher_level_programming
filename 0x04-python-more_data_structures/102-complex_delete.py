@@ -13,4 +13,4 @@ def complex_delete(a_dictionary, value):
                     del a_dictionary[n_list[nums - 1]]
             return a_dictionary
     else:
-        return []
+        return None
