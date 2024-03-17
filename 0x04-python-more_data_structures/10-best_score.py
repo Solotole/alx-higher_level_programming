@@ -1,16 +1,17 @@
 #!/usr/bin/python3
 def best_score(a_dictionary):
     max_value = 0
-    max_key = []
+    # max_key = []
     if a_dictionary is None:
         return None
     else:
-        if len(a_dictionary) > 1:
+        if len(a_dictionary) > 1: # new improvement:check
             max_value = max(a_dictionary.values())
             for i in a_dictionary:
                 if a_dictionary[i] == max_value:
-                    max_key.append(i)
-                    break
+                    return i
                 else:
                     continue
-    return max_key[0]
+        elif len(a_dictionary) == 1:
+            for i in a_dictionary.keys():
+                return i
