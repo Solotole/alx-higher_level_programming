@@ -43,6 +43,7 @@ class Square:
                 return area of the square
         """
         return self.__size ** 2
+
     @property
     def position(self):
         """position tuple getter
@@ -60,9 +61,7 @@ class Square:
                 value (tuple): tuple argument to set for the position tuple
         """
         if not isinstance(value, tuple) and len(value) != 2:
-            if not isinstance(value[0], int) and not isinstance(value[1], int):
-                if value[0] < 0 and value[1] < 0:
-                    raise TypeError('position must be a tuple of 2 positive integers')
+            raise TypeError('position must be a tuple of 2 positive integers')
         self.__position = value
 
     def my_print(self):
