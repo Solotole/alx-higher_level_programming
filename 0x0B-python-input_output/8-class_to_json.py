@@ -12,4 +12,8 @@ def class_to_json(obj):
     Returns:
         return dictionary of object obj
     """
-    return obj.__dict__
+    data = {}
+    for attr, value in obj.__dict__.items():
+        if isinstance(value, (list, dict, str, int, bool)):
+            data[attr] = value
+    return data
