@@ -92,17 +92,10 @@ class Rectangle:
                 hash.append('\n')
         return ("".join(hash))
 
-    def __repr_(self):
+    def __repr__(self):
         """string representation of the class
 
         Returns:
-            return rep
+            return formal string instance represenation
         """
-        # cls = self.__class__.__name__
-        lis = ['Rectangle', '(', 'self.__width' ',', ' ', 'self.__height', ')']
-        return ("".join(lis))
-        # tuple = (self.__width, self.__height)
-        # return = ("".join(lis))
-        # hash = "Rectangle(" + str(self.__width)
-        # hash += ", " + str(self.__height), ")"
-        # return hash
+        return f"{type(self).__name__}({self.__width}, {self.__height})"
