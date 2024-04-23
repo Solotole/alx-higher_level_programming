@@ -1,0 +1,9 @@
+#!/usr/bin/node
+// constrictor method introduction
+class Rectangle {
+  constructor(w, h) {
+    this.width = w;
+    this.height = h;
+  }
+}
+module.exports = Rectangle;
