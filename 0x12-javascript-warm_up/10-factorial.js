@@ -1,6 +1,5 @@
 #!/usr/bin/node
 const newArray = process.argv.slice(1);
-let returnValue;
 // the factorial variable declared
 function factorial (value) {
   if (!Number(value)) {
@@ -11,5 +10,5 @@ function factorial (value) {
   }
   return value * factorial(value - 1);
 }
-returnValue = factorial(newArray[1]);
+const returnValue = factorial(newArray[1]);
 console.log(returnValue);
