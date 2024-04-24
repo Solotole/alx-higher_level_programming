@@ -1,10 +1,8 @@
 #!/usr/bin/node
 // constrictor method introduction
 class Rectangle {
-  constructor(w, h) {
+  constructor (w, h) {
     if (w <= 0 || h <= 0 || w === undefined || h === undefined) {
-      // this.width = {};
-      // this.height = {};
       return {};
     } else {
       this.width = w;
