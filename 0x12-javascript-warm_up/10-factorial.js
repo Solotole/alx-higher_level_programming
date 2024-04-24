@@ -1,6 +1,6 @@
 #!/usr/bin/node
 const newArray = process.argv.slice(1);
-const returnValue;
+let returnValue;
 // the factorial variable declared
 function factorial (value) {
   if (!Number(value)) {
