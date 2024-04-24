@@ -1,13 +1,13 @@
 #!/usr/bin/node
-const originalList = require('./101-data.js').dict;
+const originalDict = require('./101-data.js').dict;
 const userOccurences = {};
 
-for (const userId in dict) {
-  const occur = dicy[userId];
-  if (!userOccurences[occur]) {
-    userOccurences[occur] = [];
+for (const userId in originalDict) {
+  const occurEnces = originalDict[userId];
+  if (!userOccurences[occurEnces]) {
+    userOccurences[occurEnces] = [];
   }
-  userOccurences[occur].push(userId);
+  userOccurences[occurEnces].push(userId);
 }
 
 console.log(userOccurences);
