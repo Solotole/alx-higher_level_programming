@@ -4,7 +4,7 @@ exports.esrever = function (list) {
   let newListIndex = 0;
   let newList = [];
   for (let i = listLength; i >= 0; i--) {
-    newList[newListIndex] = list[listLength];
+    newList[newListIndex] = list[i];
     newListIndex += 1;
   }
   return newList;
