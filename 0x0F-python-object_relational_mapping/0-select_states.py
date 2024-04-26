@@ -9,16 +9,16 @@ if __name__ == "__main__":
         print("Error: requirement is 3 arguments")
         sys.exit()
     import MySQLdb
-    user_name = argv[1]
-    password = argv[2]
-    db_name = argv[3]
+    # user_name = argv[1]
+    # password = argv[2]
+    # db_name = argv[3]
 
     conn = MySQLdb.connect(
             host="localhost",
             port=3306,
-            user=user_name,
-            passwd=password,
-            db=db_name,
+            user=argv[1],
+            passwd=argv[2],
+            db=argv[3],
             charset="utf8"
             )
     cur = conn.cursor()
@@ -28,5 +28,6 @@ if __name__ == "__main__":
 
     for state in states:
         print(state)
-    conn.close()
     cur.close()
+    conn.close()
+    # cur.close()
