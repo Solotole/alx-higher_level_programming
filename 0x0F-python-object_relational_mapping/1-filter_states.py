@@ -6,6 +6,7 @@
 
 if __name__ == "__main__":
     from sys import argv
+    exe = ""
 
     if len(argv) < 4:
         print("Error: code uses 3 arguments")
@@ -21,7 +22,8 @@ if __name__ == "__main__":
             charset="utf8"
             )
     cur = conn.cursor()
-    cur.execute("SELECT * FROM states WHERE states.name LIKE 'N%' ORDER BY id ASC")
+    exe = "SELECT * FROM states WHERE states.name LIKE 'N%' ORDER BY id ASC"
+    cur.execute(exe)
     states = cur.fetchall()
 
     for state in states:
