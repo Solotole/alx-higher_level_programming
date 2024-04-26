@@ -8,7 +8,7 @@ if __name__ == "__main__":
     from sys import argv
 
     if len(argv) < 4:
-        print("Error: used arguments should be 3")
+        print("Error: code uses 3 arguments")
         sys.exit()
     import MySQLdb
 
@@ -25,6 +25,7 @@ if __name__ == "__main__":
     states = cur.fetchall()
 
     for state in states:
-        print(state)
+        if state[1][0] == 'N':
+            print(state)
     cur.close()
     conn.close()
