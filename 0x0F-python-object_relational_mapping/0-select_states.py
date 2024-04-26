@@ -1,9 +1,12 @@
 #!/usr/bin/python3
+"""A script that lists lists all states
+from the database hbtn_0e_0_usa
+"""
 
 if __name__ == "__main__":
     from sys import argv
     if len(argv) < 4:
-        print("Error: reuqirement is 3 arguments")
+        print("Error: requirement is 3 arguments")
         sys.exit()
     import MySQLdb
     user_name = argv[1]
@@ -21,8 +24,9 @@ if __name__ == "__main__":
     cur = conn.cursor()
     cur.execute("SELECT * FROM states ORDER BY id ASC")
     states = cur.fetchall()
-    conn.close()
     # cur.close()
 
     for state in states:
         print(state)
+    conn.close()
+    cur.close()
