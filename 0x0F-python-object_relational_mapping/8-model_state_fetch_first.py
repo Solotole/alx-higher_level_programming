@@ -19,5 +19,5 @@ if __name__ == '__main__':
     if list_tuple is None:
         print("empty table")
     else:
-        print(f"{list_tuple[0]}: {list_tuple[1]}")
+        print(f"{list_tuple.id}: {list_tuple.name}")
     session.close()
