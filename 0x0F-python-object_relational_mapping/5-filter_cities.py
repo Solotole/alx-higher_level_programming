@@ -22,10 +22,13 @@ if __name__ == "__main__":
                 WHERE states.name = %s ORDER \
                 BY cities.id ASC"), tuple_4)
     cities = cur.fetchall()
-    for i in range(len(cities)):
-        if i == len(cities) - 1:
-            print(f"{cities[i][0]}")
-        elif i != len(cities) - 1:
-            print("{}".format(cities[i][0]), end=", ")
+    if len(cities) == 0:
+        print()
+    else:
+        for i in range(len(cities)):
+            if i == len(cities) - 1:
+                print(f"{cities[i][0]}")
+            elif i != len(cities) - 1:
+                print("{}".format(cities[i][0]), end=", ")
     cur.close()
     conn.close()
