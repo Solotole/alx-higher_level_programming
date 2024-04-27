@@ -19,7 +19,8 @@ if __name__ == '__main__':
     tuple_instance = State(name='Louisiana')
     session.add(tuple_instance)
     session.commit()
-    list_tuple = session.query(State.id, State.name).filter(State.name == 'Louisiana').all()
+    list_tuple = session.query(State.id, State.name) \
+        .filter(State.name == 'Louisiana').all()
     for listing in list_tuple:
         if len(listing) != 0 and listing[1] == 'Louisiana':
             print(f"{listing[0]}")
