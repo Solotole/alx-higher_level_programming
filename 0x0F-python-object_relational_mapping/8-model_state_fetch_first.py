@@ -16,4 +16,8 @@ if __name__ == '__main__':
     Session = orm.sessionmaker(bind=engine)
     session = Session()
     list_tuple = session.query(State.id, State.name).order_by(State.id).first()
-    print(f"{list_tuple[0]}: {list_tuple[1]}")
+    if list_tuple is None:
+        print("empty table")
+    else:
+        print(f"{list_tuple[0]}: {list_tuple[1]}")
+    session.close()
