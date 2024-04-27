@@ -16,7 +16,7 @@ if __name__ == '__main__':
     Session = orm.sessionmaker(bind=engine)
     session = Session()
     list_tuples = session.query(State.id, State.name)\
-                .filter(State.name.ilike('%a%')).order_by(State.id).all()
+            .filter(State.name.ilike('%a%')).order_by(State.id).all()
     for tuple_s in list_tuples:
         if 'a' in tuple_s[1] or 'A' in tuple_s[1]:
             print(f"{tuple_s[0]}: {tuple_s[1]}")
