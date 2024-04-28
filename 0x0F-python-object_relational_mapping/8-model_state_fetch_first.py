@@ -3,10 +3,10 @@
 if __name__ == '__main__':
     list_tuple = []
     String = ""
-    from sys import argv
+    from sys import argv, exit
     if len(argv) < 4:
         print("Error: 3 arguments are required")
-        sys.argv()
+        exit()
     from model_state import Base, State
     from sqlalchemy import (create_engine, orm)
     String = 'mysql+mysqldb://{}:{}@localhost/{}'
