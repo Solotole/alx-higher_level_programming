@@ -17,7 +17,7 @@ if __name__ == '__main__':
     session = Session()
     list_tuple = session.query(State).order_by(State.id).first()
     if list_tuple is None:
-        print("empty table")
+        print("Nothing")
     else:
         print(f"{list_tuple.id}: {list_tuple.name}")
     session.close()
