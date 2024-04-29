@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-"""script that deletes a state from the table
-   if State.name contain character 'a' or 'A'
+"""script that introduces relationship
 """
 
 if __name__ == '__main__':
