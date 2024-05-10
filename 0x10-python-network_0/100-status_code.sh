@@ -1,3 +1,3 @@
 #!/bin/bash
 # only displaying status code of a HTTP ressponse
-curl -o /dev/null -w '%{http_code}' -sLI "$1"
+curl -s -L -X HEAD -w "%{http_code}" "$1"
