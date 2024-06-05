@@ -12,10 +12,11 @@ request(process.argv[2], function (error, response, body) {
       if (todo.completed) {
         if (completed[todo.userId] === undefined) {
           completed[todo.userId] = 1;
-        } else{
+        } else {
           completed[todo.userId] += 1;
         }
       }
     });
-    console.log(completed);}
+    console.log(completed);
+  }
 });
