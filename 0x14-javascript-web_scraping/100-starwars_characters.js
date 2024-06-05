@@ -12,7 +12,7 @@ request.get(endPoint, function (err, response, body) {
           throw err;
         } else if (response.statusCode === 200) {
           console.log(JSON.parse(body).name);
-	}
+        }
       });
     });
   }
