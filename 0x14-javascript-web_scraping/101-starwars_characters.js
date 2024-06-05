@@ -17,7 +17,7 @@ request.get(endPoint, function (err, response, body) {
             resolve(JSON.parse(body).name);
 	  }
 	});
-      });
+      }));
     });
     Promise.all(l).then(names => {
       names.forEach(name => console.log(name));
